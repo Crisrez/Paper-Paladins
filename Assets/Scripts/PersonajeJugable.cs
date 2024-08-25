@@ -1,29 +1,39 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Video;
+using UnityEngine.VFX;
 
-public class Personaje
+public class PersonajeJugable : MonoBehaviour
 {
-    private string nombre;
-    private float vida;
-    private float velocidad;
-    private float municion;
-    private float municionMax;
-    private bool canRespawn;
-    private Transform[] pointsRespawn = new Transform[5];
+    [SerializeField] private float vidaMax;
+    [SerializeField] private float vida;
+    [SerializeField] private float velocidad;
+    [SerializeField] private float municionMax;
+    [SerializeField] private float municion;
+    [SerializeField] private bool canRespawn;
+    [SerializeField] private GameObject[] pointsRespawn = new GameObject[5];
+
+    public float GetVelocidad(){ return velocidad; }
+
+    public float GetMunicion(){ return municion; }
+
+    public float GetVida() { return vida; }
+
+    
+
+
 
     public void Disparar()
     {
         if (vida > 0 && municion > 0)
         {
             GenerarBala();
-            municion--; 
+            municion--;
             Debug.Log("Disminui municion");
         }
     }
 
-    public void disminuirHP()
+    public void RecibirDano()
     {
         Debug.Log("Recibi daño");
         vida--;
@@ -33,10 +43,13 @@ public class Personaje
         }
     }
 
-    public void Regenerar()
+    public void Curar()
     {
-        vida++;
-        Debug.Log("Regenere vida");
+        if (vida < vidaMax)
+        {
+            vida++;
+            Debug.Log("Regenere vida");
+        }
     }
 
     public void Recargar()
@@ -59,8 +72,6 @@ public class Personaje
         else
         {
             Debug.Log("Respawnee");
-
-
         }
     }
 
@@ -69,4 +80,10 @@ public class Personaje
         Debug.Log("Dispare");
     }
 
+
+
+    private void Start()
+    {
+        
+    }
 }

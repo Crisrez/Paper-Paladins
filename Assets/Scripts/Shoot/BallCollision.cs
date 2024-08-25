@@ -17,15 +17,17 @@ public class BallCollision : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Destroy(this);
-
-        DispararAnimacion();
-
-        if (collision.gameObject.CompareTag("PJ"))
+        if (!collision.gameObject.CompareTag("Bombucha"))
         {
-            collision.disminurHP();
-        }
+            Destroy(this.gameObject);
 
+            //AnimDisparar();
+
+            if (collision.gameObject.CompareTag("Personaje"))
+            {
+                collision.gameObject.GetComponent<PersonajeJugable>().RecibirDano();
+            }
+        }
     }
 
 
