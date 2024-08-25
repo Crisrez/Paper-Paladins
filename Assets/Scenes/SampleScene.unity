@@ -923,9 +923,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vidaMax: 5
   vida: 2
-  velocidad: 10
+  velocidad: 20
   municionMax: 5
   municion: 0
+  canShoot: 1
   canRespawn: 1
   pointsRespawn:
   - {fileID: 0}
@@ -2531,6 +2532,7 @@ MonoBehaviour:
   velocidad: 0
   municionMax: 0
   municion: 0
+  canShoot: 1
   canRespawn: 0
   pointsRespawn:
   - {fileID: 0}

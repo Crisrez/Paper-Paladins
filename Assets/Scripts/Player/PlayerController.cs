@@ -5,7 +5,7 @@ public class PlayerController : MonoBehaviour
 {
     private CharacterController controller;
     [SerializeField] private Vector3 playerVelocity;
-    [SerializeField] private float playerSpeed = 2.0f;
+    [SerializeField] private float playerSpeed;
 
     [SerializeField] InputController inputController;
     [SerializeField] private Transform cameraTransform;
@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
         controller = GetComponent<CharacterController>();
         inputController = InputController.Instance;
         cameraTransform = Camera.main.transform;
+        playerSpeed = gameObject.GetComponent<PersonajeJugable>().GetVelocidad();
     }
 
     void Update()
@@ -41,7 +42,7 @@ public class PlayerController : MonoBehaviour
         // Changes the height position of the player..
         if (inputController.Shoot())
         {
-            GameObject.Instantiate(ballPrefab, spawnBall.transform.position, spawnBall.transform.rotation);
+            gameObject.GetComponent<PersonajeJugable>().Disparar(ballPrefab, spawnBall);
 
         }
 

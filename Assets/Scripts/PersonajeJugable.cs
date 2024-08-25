@@ -10,6 +10,7 @@ public class PersonajeJugable : MonoBehaviour
     [SerializeField] private float velocidad;
     [SerializeField] private float municionMax;
     [SerializeField] private float municion;
+    [SerializeField] private bool canShoot = true;
     [SerializeField] private bool canRespawn;
     [SerializeField] private GameObject[] pointsRespawn = new GameObject[5];
 
@@ -19,17 +20,22 @@ public class PersonajeJugable : MonoBehaviour
 
     public float GetVida() { return vida; }
 
-    
-
-
-
-    public void Disparar()
+    public void SetCanShoot(bool _canShoot)
     {
-        if (vida > 0 && municion > 0)
+        canShoot = _canShoot;
+    }
+
+    public void Disparar(GameObject bullet, GameObject weapon)
+    {
+        if (vida > 0 && municion > 0 && canShoot)
         {
-            GenerarBala();
+            GenerarBala(bullet, weapon);
             municion--;
             Debug.Log("Disminui municion");
+        }
+        else
+        {
+            Debug.Log("SIN MUNICION!!!");
         }
     }
 
@@ -75,8 +81,9 @@ public class PersonajeJugable : MonoBehaviour
         }
     }
 
-    public void GenerarBala()
+    public void GenerarBala(GameObject bullet, GameObject weapon)
     {
+        GameObject.Instantiate(bullet, weapon.transform.position, weapon.transform.rotation);
         Debug.Log("Dispare");
     }
 
