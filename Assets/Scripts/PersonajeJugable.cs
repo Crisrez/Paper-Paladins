@@ -39,10 +39,10 @@ public class PersonajeJugable : MonoBehaviour
         }
     }
 
-    public void RecibirDano()
+    public void RecibirDano(float dmg)
     {
         Debug.Log("Recibi daño");
-        vida--;
+        vida = vida - dmg;
         if (vida <= 0)
         {
             Muerte();

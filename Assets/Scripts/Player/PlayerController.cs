@@ -43,7 +43,6 @@ public class PlayerController : MonoBehaviour
         if (inputController.Shoot())
         {
             gameObject.GetComponent<PersonajeJugable>().Disparar(ballPrefab, spawnBall);
-
         }
 
     }
