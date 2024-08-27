@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.VFX;
 
-public class PersonajeJugable : MonoBehaviour
-{
+public class PersonajeJugable : MonoBehaviour {
     [SerializeField] private float vidaMax;
     [SerializeField] private float vida;
     [SerializeField] private float velocidad;
@@ -14,83 +13,68 @@ public class PersonajeJugable : MonoBehaviour
     [SerializeField] private bool canRespawn;
     [SerializeField] private GameObject[] pointsRespawn = new GameObject[5];
 
-    public float GetVelocidad(){ return velocidad; }
+    public float GetVelocidad() { return velocidad; }
 
-    public float GetMunicion(){ return municion; }
+    public float GetMunicion() { return municion; }
 
     public float GetVida() { return vida; }
 
-    public void SetCanShoot(bool _canShoot)
-    {
+    public void SetCanShoot(bool _canShoot) {
         canShoot = _canShoot;
     }
 
-    public void Disparar(GameObject bullet, GameObject weapon)
-    {
-        if (vida > 0 && municion > 0 && canShoot)
-        {
+    public void Disparar(GameObject bullet, GameObject weapon) {
+        if (vida > 0 && municion > 0 && canShoot) {
             GenerarBala(bullet, weapon);
             municion--;
             Debug.Log("Disminui municion");
         }
-        else
-        {
+        else {
             Debug.Log("SIN MUNICION!!!");
         }
     }
 
-    public void RecibirDano(float dmg)
-    {
-        Debug.Log("Recibi daño");
+    public void RecibirDano(float dmg) {
+        Debug.Log("Recibi daÃ±o");
         vida = vida - dmg;
-        if (vida <= 0)
-        {
+        if (vida <= 0) {
             Muerte();
         }
     }
 
-    public void Curar()
-    {
-        if (vida < vidaMax)
-        {
+    public void Curar() {
+        if (vida < vidaMax) {
             vida++;
             Debug.Log("Regenere vida");
         }
     }
 
-    public void Recargar()
-    {
-        if (municion < municionMax)
-        {
+    public void Recargar() {
+        if (municion < municionMax) {
             municion++;
             Debug.Log("Recargue bombucha");
         }
     }
 
 
-    public void Muerte()
-    {
-        if (!canRespawn)
-        {
+    public void Muerte() {
+        if (!canRespawn) {
             Debug.Log("Mori");
             //Destroy(this);
         }
-        else
-        {
+        else {
             Debug.Log("Respawnee");
         }
     }
 
-    public void GenerarBala(GameObject bullet, GameObject weapon)
-    {
-        GameObject.Instantiate(bullet, weapon.transform.position, weapon.transform.rotation);
+    public void GenerarBala(GameObject bullet, GameObject weapon) {
+        var instance = GameObject.Instantiate(bullet, weapon.transform.position, weapon.transform.rotation);
+        var ballInstance = instance.GetComponent<Ball>();
+        ballInstance.owner = this;
         Debug.Log("Dispare");
     }
 
 
 
-    private void Start()
-    {
-        
-    }
+    private void Start() { }
 }
