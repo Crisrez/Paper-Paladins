@@ -32,12 +32,46 @@ public class EnemyController : MonoBehaviour
 
     public void BotDispara()
     {
-        gameObject.GetComponent<PersonajeJugable>().Disparar(ballPrefab, spawnBall);
+        me.Disparar(ballPrefab, spawnBall);
     }
 
     private void Update()
     {
         agent.destination = objetive.position;
+    }
+
+    private void FixedUpdate()
+    {
+        if (me.GetVida() < 2f)
+        {
+            do
+            {
+                if ((gameObject.transform.position - zoneHeal1.position).magnitude < (gameObject.transform.position - zoneHeal2.position).magnitude)
+                {
+                    objetive = zoneHeal1;
+                    return;
+                }
+                else
+                {
+                    objetive = zoneHeal2;
+                    return;
+                }
+            } while (me.GetVida() != me.GetVidaMax());
+        }
+
+        if (me.GetMunicion() == 0)
+        {
+            if ((gameObject.transform.position - zoneRecharge1.position).magnitude < (gameObject.transform.position - zoneRecharge2.position).magnitude)
+            {
+                objetive = zoneRecharge1;
+                return;
+            }
+            else
+            {
+                objetive = zoneRecharge2;
+                return;
+            }
+        }
     }
 
     private void OnTriggerStay(Collider collider)

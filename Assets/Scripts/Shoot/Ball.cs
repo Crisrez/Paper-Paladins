@@ -15,9 +15,9 @@ public class Ball : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        // GameObject jugador = GameObject.Find("Player");
-        //
-        // Debug.Log((jugador.transform.position - this.gameObject.transform.position).magnitude);
+        //GameObject jugador = GameObject.Find("Player");
+        
+        //Debug.Log(new Vector3(jugador.transform.position.x - gameObject.transform.position.x, 0, jugador.transform.position.z - gameObject.transform.position.z).magnitude);
 
         if (!other.CompareTag("Bombucha"))
         {

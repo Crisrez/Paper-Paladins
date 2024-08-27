@@ -243,7 +243,7 @@ GameObject:
   - component: {fileID: 140660806}
   - component: {fileID: 140660810}
   m_Layer: 0
-  m_Name: Curacion
+  m_Name: CuracionA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -386,7 +386,7 @@ GameObject:
   - component: {fileID: 321334210}
   - component: {fileID: 321334214}
   m_Layer: 0
-  m_Name: Recarga
+  m_Name: RecargaA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1509,7 +1509,7 @@ GameObject:
   - component: {fileID: 1669922884}
   - component: {fileID: 1669922888}
   m_Layer: 0
-  m_Name: Recarga
+  m_Name: RecargaB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1652,7 +1652,7 @@ GameObject:
   - component: {fileID: 1724070189}
   - component: {fileID: 1724070193}
   m_Layer: 0
-  m_Name: Curacion
+  m_Name: CuracionB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2128,19 +2128,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09be484d65212a742888ec1481c05882, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidaMax: 0
-  vida: 0
+  vidaMax: 10
+  vida: 10
   velocidad: 0
   municionMax: 0
   municion: 0
   canShoot: 1
   canRespawn: 0
+  inZone: 0
   pointsRespawn:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  cooldown: 0
+  timer: 5
 --- !u!136 &2056722762
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2240,6 +2243,10 @@ PrefabInstance:
     - target: {fileID: 1324566728121647636, guid: ea2721af65603be468b56dc42dd1bab8, type: 3}
       propertyPath: vida
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324566728121647636, guid: ea2721af65603be468b56dc42dd1bab8, type: 3}
+      propertyPath: cooldown
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1324566728121647636, guid: ea2721af65603be468b56dc42dd1bab8, type: 3}
       propertyPath: municion
@@ -2354,10 +2361,42 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bot
       objectReference: {fileID: 0}
+    - target: {fileID: 5985137102935355379, guid: a21c620a513f6c54c9f197d7e0f3c4ef, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6003069582287064305, guid: a21c620a513f6c54c9f197d7e0f3c4ef, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 700480790}
+    - target: {fileID: 6003069582287064305, guid: a21c620a513f6c54c9f197d7e0f3c4ef, type: 3}
+      propertyPath: zoneHeal1
+      value: 
+      objectReference: {fileID: 140660805}
+    - target: {fileID: 6003069582287064305, guid: a21c620a513f6c54c9f197d7e0f3c4ef, type: 3}
+      propertyPath: zoneHeal2
+      value: 
+      objectReference: {fileID: 1724070188}
+    - target: {fileID: 6003069582287064305, guid: a21c620a513f6c54c9f197d7e0f3c4ef, type: 3}
+      propertyPath: zoneRecharge1
+      value: 
+      objectReference: {fileID: 321334209}
+    - target: {fileID: 6003069582287064305, guid: a21c620a513f6c54c9f197d7e0f3c4ef, type: 3}
+      propertyPath: zoneRecharge2
+      value: 
+      objectReference: {fileID: 1669922883}
+    - target: {fileID: 6475515814993699237, guid: a21c620a513f6c54c9f197d7e0f3c4ef, type: 3}
+      propertyPath: vida
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6475515814993699237, guid: a21c620a513f6c54c9f197d7e0f3c4ef, type: 3}
+      propertyPath: cooldown
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6475515814993699237, guid: a21c620a513f6c54c9f197d7e0f3c4ef, type: 3}
+      propertyPath: municion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -15,6 +15,7 @@ public class RechargeZone : MonoBehaviour
     private void OnTriggerEnter(Collider collider)
     {
         time = 0f;
+        collider.gameObject.GetComponent<PersonajeJugable>().SetInZone(true);
         collider.gameObject.GetComponent<PersonajeJugable>().SetCanShoot(false);
     }
 
@@ -32,6 +33,7 @@ public class RechargeZone : MonoBehaviour
 
     private void OnTriggerExit(Collider collider)
     {
+        collider.gameObject.GetComponent<PersonajeJugable>().SetInZone(false);
         collider.gameObject.GetComponent<PersonajeJugable>().SetCanShoot(true);
     }
 }
