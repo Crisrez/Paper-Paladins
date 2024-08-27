@@ -1,95 +1,77 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Serialization;
 
-public class EnemyController : MonoBehaviour
-{
-    [SerializeField] Transform zoneHeal1;
-    [SerializeField] Transform zoneHeal2;
-    [SerializeField] Transform zoneRecharge1;
-    [SerializeField] Transform zoneRecharge2;
-
-    [SerializeField] NavMeshAgent agent;
+public class EnemyController : MonoBehaviour {
+    NavMeshAgent agent;
+    PersonajeJugable me;
+    private EnemySensor sensor;
 
     [SerializeField] GameObject ballPrefab;
     [SerializeField] GameObject spawnBall;
 
-    [SerializeField] PersonajeJugable me;
-
     [SerializeField] GameObject player;
 
-    [SerializeField] private Transform objetive;
+    [SerializeField]
+    private float engagementDistance = 5;
+    [SerializeField]
+    private float attackCooldown = 0.8f;
 
-    private void Start()
-    {
+    private Transform agentTarget;
+
+    private PersonajeJugable targetCharacter;
+
+
+    private void Start() {
         agent = GetComponent<NavMeshAgent>();
         me = GetComponent<PersonajeJugable>();
+        sensor = GetComponentInChildren<EnemySensor>();
+        
         agent.speed = me.GetVelocidad();
         agent.destination = player.transform.position;
-
     }
 
-    public void BotDispara()
-    {
+    public void BotDispara() {
         me.Disparar(ballPrefab, spawnBall);
     }
 
-    private void Update()
-    {
-        agent.destination = objetive.position;
+    private void FixedUpdate() {
+        UpdateTarget(); 
+        
+        
+        agent.destination = agentTarget.position;
     }
 
-    private void FixedUpdate()
-    {
-        if (me.GetVida() < 2f)
-        {
-            do
-            {
-                if ((gameObject.transform.position - zoneHeal1.position).magnitude < (gameObject.transform.position - zoneHeal2.position).magnitude)
-                {
-                    objetive = zoneHeal1;
-                    return;
-                }
-                else
-                {
-                    objetive = zoneHeal2;
-                    return;
-                }
-            } while (me.GetVida() != me.GetVidaMax());
-        }
+    private void UpdateTarget() {
+        var position = transform.position;
+        if (me.GetVida() < 2f) {
+            var closestHealZone = HealZone.HealZones.GetClosest(position);
 
-        if (me.GetMunicion() == 0)
-        {
-            if ((gameObject.transform.position - zoneRecharge1.position).magnitude < (gameObject.transform.position - zoneRecharge2.position).magnitude)
-            {
-                objetive = zoneRecharge1;
-                return;
-            }
-            else
-            {
-                objetive = zoneRecharge2;
+            if (closestHealZone != null) {
+                agentTarget = closestHealZone.transform;
+                agent.stoppingDistance = 1;
+                targetCharacter = null;
                 return;
             }
         }
-    }
 
-    private void OnTriggerStay(Collider collider)
-    {
-        if (collider.gameObject.CompareTag("Personaje"))
-        {
-            objetive = collider.transform;
+        if (me.GetMunicion() == 0) {
+            RechargeZone closestRechargeZone = RechargeZone.RechargeZones.GetClosest(position);
+            if (closestRechargeZone) {
+                agentTarget = closestRechargeZone.transform;
+                agent.stoppingDistance = 1;
+                targetCharacter = null;
+                return;
+            }
+        }
+
+        if (sensor.HasTargets()) {
+            targetCharacter =  sensor.Targets.GetClosest(position);
+            if (targetCharacter != null) {
+                agentTarget = targetCharacter.transform;
+                agent.stoppingDistance = engagementDistance;
+                return;
+            }
         }
     }
-
-    private void OnTriggerExit(Collider collider)
-    {
-        if (collider.gameObject.CompareTag("Personaje"))
-        {
-            objetive = null;
-        }
-    }
-
-
-
 }

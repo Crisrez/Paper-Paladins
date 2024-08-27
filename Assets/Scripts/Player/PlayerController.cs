@@ -4,7 +4,6 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private CharacterController controller;
-    [SerializeField] private Vector3 playerVelocity;
     [SerializeField] private float playerSpeed;
 
     [SerializeField] InputController inputController;
@@ -21,13 +20,8 @@ public class PlayerController : MonoBehaviour
         playerSpeed = gameObject.GetComponent<PersonajeJugable>().GetVelocidad();
     }
 
-    void Update()
+    private void Update()
     {
-        if (playerVelocity.y < 0)
-        {
-            playerVelocity.y = 0f;
-        }
-
         Vector2 movement = inputController.GetPlayerMovement();
 
         Vector3 move = new Vector3(movement.x, 0f, movement.y);
