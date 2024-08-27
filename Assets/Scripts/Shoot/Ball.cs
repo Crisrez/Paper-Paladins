@@ -10,7 +10,7 @@ public class Ball : MonoBehaviour {
     public PersonajeJugable owner;
     
     private void Start() {
-        GetComponent<Rigidbody>().velocity = (gameObject.transform.forward + Vector3.up).normalized * baseVelocity;
+        GetComponent<Rigidbody>().velocity = (gameObject.transform.forward * 1.5f + Vector3.up / 2).normalized * baseVelocity;
     }
 
     private void OnTriggerEnter(Collider other)
