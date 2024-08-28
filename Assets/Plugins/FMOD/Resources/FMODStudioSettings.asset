@@ -609,8 +609,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../../FMOD Studio/Bomboocher/Bomboocher.fspro
-  sourceBankPath: ../../FMOD Studio/Bomboocher/Build
+  sourceProjectPath: Assets/Bomboocher/Bomboocher.fspro
+  sourceBankPath: Assets/Bomboocher/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{52c2bf4a-ffd1-400d-80e3-db92f98870cf}">
+		<property name="assetPath">
+			<value>StepsLoop_150bpm.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.6000000000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{cedf0758-9545-4181-97d8-9bed2a41b92b}</destination>
+		</relationship>
+	</object>
+</objects>

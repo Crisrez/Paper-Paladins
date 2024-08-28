@@ -54,7 +54,7 @@ MonoBehaviour:
   - {fileID: 1162992396044038760}
   MinDistance: 1
   MaxDistance: 20
-  Length: 198597
+  Length: 211597
 --- !u!114 &-848721019429232864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,7 +135,7 @@ MonoBehaviour:
   - {fileID: 1090010319946463831}
   StringsBanks:
   - {fileID: 7998352078852358208}
-  cacheTime: 638604621029977005
+  cacheTime: 638604650819023923
   cacheVersion: 131618
 --- !u!114 &1090010319946463831
 MonoBehaviour:
@@ -152,10 +152,10 @@ MonoBehaviour:
   Path: ../../FMOD Studio/Bomboocher/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638604621029956922
+  lastModified: 638604650819003882
   FileSizes:
   - Name: Desktop
-    Value: 2602112
+    Value: 2675328
   Exists: 1
 --- !u!114 &1162992396044038760
 MonoBehaviour:
@@ -172,7 +172,7 @@ MonoBehaviour:
   Name: Location
   StudioPath: 
   Min: 0
-  Max: 3
+  Max: 4
   Default: 0
   ID:
     data1: 322252886
@@ -196,7 +196,7 @@ MonoBehaviour:
   Name: Location
   StudioPath: parameter:/Location
   Min: 0
-  Max: 3
+  Max: 4
   Default: 0
   ID:
     data1: 322252886
@@ -220,7 +220,7 @@ MonoBehaviour:
   Path: ../../FMOD Studio/Bomboocher/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638604621029977005
+  lastModified: 638604650819023923
   FileSizes:
   - Name: Desktop
     Value: 1016
