@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 8368768690603226259}
   - component: {fileID: 6540238081267482691}
   - component: {fileID: 5032042853687238897}
+  - component: {fileID: 1166075018856716172}
+  - component: {fileID: 2230618573184085946}
   m_Layer: 7
   m_Name: Ball
   m_TagString: Bombucha
@@ -97,6 +99,68 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseVelocity: 10
   owner: {fileID: 0}
+--- !u!114 &1166075018856716172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6763477341526841654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -234814299
+      Data2: 1224567948
+      Data3: 1851874487
+      Data4: 484234624
+    Path: event:/Throw
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &2230618573184085946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6763477341526841654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -336439618
+      Data2: 1229212637
+      Data3: 2023492026
+      Data4: 675057936
+    Path: event:/Splash
+  Event: 
+  PlayEvent: 2
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &8638261586945204314
 GameObject:
   m_ObjectHideFlags: 0
