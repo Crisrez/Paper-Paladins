@@ -1,10 +1,13 @@
-﻿using UnityEngine;
+﻿using Unity.VisualScripting;
+using UnityEngine;
 
 public class FMODContinuousPlayback : MonoBehaviour
 {
     private string fmodEventPath = "event:/StepsLoop";
 
     private FMOD.Studio.EventInstance fmodEventInstance;
+
+    [SerializeField] private InputController inputController;
 
     void Start()
     {
@@ -13,14 +16,7 @@ public class FMODContinuousPlayback : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.A) ||
-            Input.GetKey(KeyCode.S) ||
-            Input.GetKey(KeyCode.D) ||
-            Input.GetKey(KeyCode.W) ||
-            Input.GetKey(KeyCode.LeftArrow) ||
-            Input.GetKey(KeyCode.UpArrow) ||
-            Input.GetKey(KeyCode.RightArrow) ||
-            Input.GetKey(KeyCode.DownArrow))
+        if (inputController.GetPlayerMovement().magnitude > 0)
         {
             PlayFMODEvent();
         }
