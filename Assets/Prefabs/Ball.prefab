@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8368768690603226259}
   - component: {fileID: 6540238081267482691}
   - component: {fileID: 5032042853687238897}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Ball
   m_TagString: Bombucha
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 7364076937016101254}
   - component: {fileID: 6109249310311978130}
   - component: {fileID: 6634462598511496040}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5130247483730768940}
   - component: {fileID: 2333188050388403273}
   - component: {fileID: 6671648440075552514}
-  m_Layer: 3
+  m_Layer: 9
   m_Name: EnemySensor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79,7 +79,7 @@ GameObject:
   - component: {fileID: 3749149502653544713}
   - component: {fileID: 2116601985136487513}
   - component: {fileID: 522480654774304755}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Art_Character
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1198577660614932365}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.44929934, z: -0, w: 0.8933813}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -197,13 +197,13 @@ GameObject:
   - component: {fileID: 1798922873761355218}
   - component: {fileID: 2963944755747138907}
   - component: {fileID: 2058626141182460820}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1798922873761355218
 Transform:
   m_ObjectHideFlags: 0
@@ -279,7 +279,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3158935823061871978}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ArmLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -295,7 +295,7 @@ Transform:
   m_GameObject: {fileID: 3787637589633027773}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.3, y: 0.5, z: 1.5}
+  m_LocalPosition: {x: -0.3, y: 0.15, z: 1.015}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -310,6 +310,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4817977809186250950}
+  - component: {fileID: 2581580042691042326}
   m_Layer: 6
   m_Name: Hitbox
   m_TagString: Personaje
@@ -332,6 +333,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1377976849714831125}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &2581580042691042326
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5106710258207459372}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5150053286272540140
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,7 +367,7 @@ GameObject:
   - component: {fileID: 8014035224365773762}
   - component: {fileID: 1144417418579759481}
   - component: {fileID: 9135548848956999039}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -558,7 +582,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1326943782175237136}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ArmRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -574,7 +598,7 @@ Transform:
   m_GameObject: {fileID: 8441014835195315683}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3, y: 0.5, z: 1.5}
+  m_LocalPosition: {x: 0.3, y: 0.15, z: 1.015}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

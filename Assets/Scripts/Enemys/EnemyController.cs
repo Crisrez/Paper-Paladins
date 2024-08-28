@@ -70,6 +70,7 @@ public class EnemyController : MonoBehaviour {
             if (targetCharacter != null) {
                 agentTarget = targetCharacter.transform;
                 agent.stoppingDistance = engagementDistance;
+                BotDispara();
                 return;
             }
         }
