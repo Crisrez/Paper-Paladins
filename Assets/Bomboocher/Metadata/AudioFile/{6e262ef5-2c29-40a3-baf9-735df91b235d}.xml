@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{6e262ef5-2c29-40a3-baf9-735df91b235d}">
+		<property name="assetPath">
+			<value>Drier.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>83.189297052154188</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{cedf0758-9545-4181-97d8-9bed2a41b92b}</destination>
+		</relationship>
+	</object>
+</objects>
