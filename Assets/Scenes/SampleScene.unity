@@ -242,6 +242,7 @@ GameObject:
   - component: {fileID: 140660807}
   - component: {fileID: 140660806}
   - component: {fileID: 140660810}
+  - component: {fileID: 140660811}
   m_Layer: 8
   m_Name: CuracionA
   m_TagString: Untagged
@@ -371,6 +372,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldown: 1
   time: 0
+--- !u!114 &140660811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140660804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Personaje
+  EventReference:
+    Guid:
+      Data1: -937035873
+      Data2: 1335016946
+      Data3: 2022399162
+      Data4: 715916956
+    Path: event:/Drier
+  Event: 
+  PlayEvent: 3
+  StopEvent: 4
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &321334208
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,6 +417,7 @@ GameObject:
   - component: {fileID: 321334211}
   - component: {fileID: 321334210}
   - component: {fileID: 321334214}
+  - component: {fileID: 321334215}
   m_Layer: 8
   m_Name: RecargaA
   m_TagString: Untagged
@@ -514,6 +547,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldown: 3
   time: 0
+--- !u!114 &321334215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321334208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Personaje
+  EventReference:
+    Guid:
+      Data1: 1160956429
+      Data2: 1171492661
+      Data3: 1685260697
+      Data4: -1886323519
+    Path: event:/Recarga
+  Event: 
+  PlayEvent: 3
+  StopEvent: 4
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &349663235
 GameObject:
   m_ObjectHideFlags: 0
@@ -1640,6 +1704,7 @@ GameObject:
   - component: {fileID: 1669922885}
   - component: {fileID: 1669922884}
   - component: {fileID: 1669922888}
+  - component: {fileID: 1669922889}
   m_Layer: 8
   m_Name: RecargaB
   m_TagString: Untagged
@@ -1769,6 +1834,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldown: 3
   time: 0
+--- !u!114 &1669922889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669922882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Personaje
+  EventReference:
+    Guid:
+      Data1: 1160956429
+      Data2: 1171492661
+      Data3: 1685260697
+      Data4: -1886323519
+    Path: event:/Recarga
+  Event: 
+  PlayEvent: 3
+  StopEvent: 4
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1724070187
 GameObject:
   m_ObjectHideFlags: 0
@@ -1783,6 +1879,7 @@ GameObject:
   - component: {fileID: 1724070190}
   - component: {fileID: 1724070189}
   - component: {fileID: 1724070193}
+  - component: {fileID: 1724070194}
   m_Layer: 8
   m_Name: CuracionB
   m_TagString: Untagged
@@ -1912,6 +2009,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldown: 1
   time: 0
+--- !u!114 &1724070194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724070187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Personaje
+  EventReference:
+    Guid:
+      Data1: -937035873
+      Data2: 1335016946
+      Data3: 2022399162
+      Data4: 715916956
+    Path: event:/Drier
+  Event: 
+  PlayEvent: 3
+  StopEvent: 4
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1750051300
 PrefabInstance:
   m_ObjectHideFlags: 0

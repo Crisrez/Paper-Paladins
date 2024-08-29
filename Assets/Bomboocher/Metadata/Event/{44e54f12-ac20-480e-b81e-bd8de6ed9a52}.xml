@@ -104,9 +104,6 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{f6c267ba-8aec-4382-b34b-1544dc844298}">
-		<property name="volume">
-			<value>-2.5</value>
-		</property>
 		<property name="name">
 			<value>StepsLoop</value>
 		</property>
