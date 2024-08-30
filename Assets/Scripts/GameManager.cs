@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI textTimer;
 
-    [SerializeField] List<GameObject> bombuchaUI;
+    [SerializeField] private GameObject ammoUI;
     [SerializeField] List<GameObject> humedadUI;
 
     [SerializeField] PersonajeJugable player;
@@ -23,19 +23,9 @@ public class GameManager : MonoBehaviour
 
         textTimer.text = "" + Mathf.Floor(temporizador / 60).ToString("f0") + " : " + (temporizador % 60).ToString("f0");
 
-        for (int i = 0; i < bombuchaUI.Count; i++)
-        {
-            if (i < player.GetMunicion())
-            {
-                bombuchaUI[i].gameObject.SetActive(true);
-            }
-            else
-            {
-                bombuchaUI[i].gameObject.SetActive(false);
-            }
-        }
+        UpdateAmmoUI();
 
-        for (int i = 0; i < bombuchaUI.Count; i++)
+        for (int i = 0; i < humedadUI.Count; i++)
         {
             if (i < player.GetVida())
             {
@@ -45,6 +35,14 @@ public class GameManager : MonoBehaviour
             {
                 humedadUI[i+1].gameObject.SetActive(false);
             }
+        }
+    }
+    
+    private void UpdateAmmoUI() {
+        float ammoCount = player.GetMunicion();
+        Transform ammoUITransform = ammoUI.transform;
+        for (int i = 0; i < ammoUI.transform.childCount; i++) {
+            ammoUITransform.GetChild(i).gameObject.SetActive(i < ammoCount);
         }
     }
 

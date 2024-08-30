@@ -6,6 +6,90 @@
   <component name="ChangeListManager">
     <list default="true" id="5de32145-a833-49ba-baf1-befa7dcfd50b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Paper-Paladins/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Paper-Paladins/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/AC_Character.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/AC_Character.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Attack_0.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Attack_0.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Attack_135.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Attack_135.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Attack_180.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Attack_180.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Attack_225.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Attack_225.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Attack_270.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Attack_270.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Attack_315.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Attack_315.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Attack_45.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Attack_45.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Attack_90.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Attack_90.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Damage_0.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Damage_0.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Damage_135.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Damage_135.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Damage_180.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Damage_180.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Damage_225.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Damage_225.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Damage_270.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Damage_270.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Damage_315.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Damage_315.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Damage_45.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Damage_45.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Damage_90.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Damage_90.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Death_0.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Death_0.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Death_135.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Death_135.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Death_180.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Death_180.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Death_225.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Death_225.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Death_270.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Death_270.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Death_315.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Death_315.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Death_45.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Death_45.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Death_90.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Death_90.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Idle_0.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Idle_0.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Idle_135.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Idle_135.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Idle_180.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Idle_180.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Idle_225.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Idle_225.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Idle_270.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Idle_270.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Idle_315.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Idle_315.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Idle_45.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Idle_45.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Idle_90.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Idle_90.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Run_0.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Run_0.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Run_135.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Run_135.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Run_180.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Run_180.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Run_225.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Run_225.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Run_270.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Run_270.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Run_315.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Run_315.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Run_45.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Run_45.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Run_90.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/A_Run_90.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmod_editor.log" beforeDir="false" afterPath="$PROJECT_DIR$/fmod_editor.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +120,7 @@
   &quot;keyToString&quot;: {
     &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Audio&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
   },
   &quot;keyToStringList&quot;: {
