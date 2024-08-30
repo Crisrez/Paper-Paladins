@@ -16,8 +16,6 @@ public class PersonajeJugable : MonoBehaviour {
     [SerializeField] private bool canRespawn;
     [SerializeField] private bool inZone = false;
 
-    [SerializeField] private GameObject[] pointsRespawn = new GameObject[5];
-
     [SerializeField] private float cooldownShoot;
     [SerializeField] private float timerShoot = 5f;
     [SerializeField] private float timerInZone;
@@ -25,7 +23,7 @@ public class PersonajeJugable : MonoBehaviour {
     public float GetVelocidad() { return velocidad; }
 
     public float GetMunicion() { return municion; }
-    
+
     public float GetMunicionMax() { return municionMax; }
 
     public float GetVida() { return vida; }
@@ -38,29 +36,23 @@ public class PersonajeJugable : MonoBehaviour {
         canShoot = _canShoot;
     }
 
-    public void SetInZone(bool _inZone)
-    {
+    public void SetInZone(bool _inZone) {
         inZone = _inZone;
     }
 
-    private void FixedUpdate()
-    {
-        if (!inZone)
-        {
+    private void FixedUpdate() {
+        if (!inZone) {
             timerShoot += Time.deltaTime;
             timerInZone = 0f;
 
-            if (cooldownShoot < timerShoot)
-            {
+            if (cooldownShoot < timerShoot) {
                 SetCanShoot(true);
             }
-            else
-            {
+            else {
                 SetCanShoot(false);
             }
         }
-        else
-        {
+        else {
             timerShoot = 0f;
             timerInZone += Time.deltaTime;
         }
@@ -80,8 +72,9 @@ public class PersonajeJugable : MonoBehaviour {
     }
 
     public void RecibirDano(float dmg) {
-        //Debug.Log("Recibi daño");
-        vida = vida - dmg;
+        if (vida == 0) return;
+        
+        vida -= dmg;
         if (vida <= 0) {
             Muerte();
         }
@@ -123,13 +116,12 @@ public class PersonajeJugable : MonoBehaviour {
         //Debug.Log("Dispare");
     }
 
-    public void Respawn()
-    {
-        if (canRespawn)
-        {
-            //Debug.Log("REVIVI CARAJO");
+    public void Respawn() {
+        StartCoroutine(RespawnCoroutine());
 
-            gameObject.transform.position = new Vector3 (0,0,0);
+        IEnumerator RespawnCoroutine() {
+            yield return new WaitForSeconds(5f);
+            gameObject.transform.position = RespawnPoint.GetRespawnPoint().transform.position;
         }
     }
 

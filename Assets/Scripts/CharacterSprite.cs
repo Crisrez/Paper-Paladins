@@ -8,11 +8,14 @@ public class CharacterSprite : MonoBehaviour {
     private Transform camera;
     private Transform parent;
     private Rigidbody parentRigidbody;
+    private PersonajeJugable character;
     private NavMeshAgent agent;
     private static readonly int ViewAngle = Animator.StringToHash("ViewAngle");
     private static readonly int IsRunning = Animator.StringToHash("IsRunning");
+    private static readonly int IsDead = Animator.StringToHash("IsDead");
     private void Awake() {
         parent = transform.parent;
+        character = GetComponentInParent<PersonajeJugable>();
         parentRigidbody = parent.GetComponent<Rigidbody>();
         agent = parent.GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
@@ -36,5 +39,6 @@ public class CharacterSprite : MonoBehaviour {
 
         animator.SetBool(IsRunning, speed > 0.1f);
         animator.SetFloat(ViewAngle, transform.localRotation.eulerAngles.y);
+        animator.SetBool(IsDead, character.GetVida() == 0);
     }
 }
