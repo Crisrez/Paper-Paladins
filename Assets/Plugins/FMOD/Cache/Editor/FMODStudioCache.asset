@@ -97,10 +97,10 @@ MonoBehaviour:
   Path: Assets/Bomboocher/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638605735415875315
+  lastModified: 638606273607748401
   FileSizes:
   - Name: Desktop
-    Value: 1126
+    Value: 1174
   Exists: 1
 --- !u!114 &-848721019429232864
 MonoBehaviour:
@@ -178,13 +178,14 @@ MonoBehaviour:
   - {fileID: -848721019429232864}
   - {fileID: 166082058817290361}
   - {fileID: -2988261525742833305}
+  - {fileID: 7142886566801178269}
   EditorParameters:
   - {fileID: 7973585874002729043}
   MasterBanks:
   - {fileID: 8113304051633256248}
   StringsBanks:
   - {fileID: -1958517565979023761}
-  cacheTime: 638605735415875315
+  cacheTime: 638606273607748401
   cacheVersion: 131618
 --- !u!114 &166082058817290361
 MonoBehaviour:
@@ -237,6 +238,33 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &7142886566801178269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ChargeNotification
+  m_EditorClassIdentifier: 
+  Path: event:/ChargeNotification
+  Guid:
+    Data1: -1313033243
+    Data2: 1089915565
+    Data3: -1859380350
+    Data4: 2034825591
+  Banks:
+  - {fileID: 8113304051633256248}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1375
 --- !u!114 &7973585874002729043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,8 +304,8 @@ MonoBehaviour:
   Path: Assets/Bomboocher/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638605735415804431
+  lastModified: 638606273607738398
   FileSizes:
   - Name: Desktop
-    Value: 4881376
+    Value: 4911168
   Exists: 1

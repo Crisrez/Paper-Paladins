@@ -609,6 +609,8 @@ GameObject:
   - component: {fileID: 103755471}
   - component: {fileID: 103755473}
   - component: {fileID: 103755472}
+  - component: {fileID: 103755475}
+  - component: {fileID: 103755474}
   m_Layer: 5
   m_Name: 40%
   m_TagString: Untagged
@@ -673,6 +675,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 103755470}
   m_CullTransparentMesh: 1
+--- !u!114 &103755474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103755470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Location
+  TriggerEvent: 11
+  Value: 1
+--- !u!114 &103755475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103755470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Location
+  TriggerEvent: 12
+  Value: 2
 --- !u!1 &113600693
 GameObject:
   m_ObjectHideFlags: 0
@@ -980,6 +1014,7 @@ GameObject:
   - component: {fileID: 309177130}
   - component: {fileID: 309177132}
   - component: {fileID: 309177131}
+  - component: {fileID: 309177133}
   m_Layer: 5
   m_Name: Bombucha - 4
   m_TagString: Untagged
@@ -1044,6 +1079,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 309177129}
   m_CullTransparentMesh: 1
+--- !u!114 &309177133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309177129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1313033243
+      Data2: 1089915565
+      Data3: -1859380350
+      Data4: 2034825591
+    Path: event:/ChargeNotification
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &319796331
 GameObject:
   m_ObjectHideFlags: 0
@@ -2743,6 +2809,7 @@ GameObject:
   - component: {fileID: 1564585150}
   - component: {fileID: 1564585152}
   - component: {fileID: 1564585151}
+  - component: {fileID: 1564585153}
   m_Layer: 5
   m_Name: Bombucha - 2
   m_TagString: Untagged
@@ -2807,6 +2874,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1564585149}
   m_CullTransparentMesh: 1
+--- !u!114 &1564585153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564585149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1313033243
+      Data2: 1089915565
+      Data3: -1859380350
+      Data4: 2034825591
+    Path: event:/ChargeNotification
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1582073234
 GameObject:
   m_ObjectHideFlags: 0
@@ -2818,6 +2916,7 @@ GameObject:
   - component: {fileID: 1582073235}
   - component: {fileID: 1582073237}
   - component: {fileID: 1582073236}
+  - component: {fileID: 1582073238}
   m_Layer: 5
   m_Name: Bombucha - 1
   m_TagString: Untagged
@@ -2882,6 +2981,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1582073234}
   m_CullTransparentMesh: 1
+--- !u!114 &1582073238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582073234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1313033243
+      Data2: 1089915565
+      Data3: -1859380350
+      Data4: 2034825591
+    Path: event:/ChargeNotification
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1640570908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4047,6 +4177,7 @@ GameObject:
   - component: {fileID: 1894572758}
   - component: {fileID: 1894572760}
   - component: {fileID: 1894572759}
+  - component: {fileID: 1894572761}
   m_Layer: 5
   m_Name: Bombucha - 3
   m_TagString: Untagged
@@ -4111,6 +4242,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1894572757}
   m_CullTransparentMesh: 1
+--- !u!114 &1894572761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894572757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1313033243
+      Data2: 1089915565
+      Data3: -1859380350
+      Data4: 2034825591
+    Path: event:/ChargeNotification
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &2008688835
 GameObject:
   m_ObjectHideFlags: 0
@@ -4557,6 +4719,7 @@ GameObject:
   - component: {fileID: 2083517484}
   - component: {fileID: 2083517486}
   - component: {fileID: 2083517485}
+  - component: {fileID: 2083517487}
   m_Layer: 5
   m_Name: Bombucha - 5
   m_TagString: Untagged
@@ -4621,6 +4784,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2083517483}
   m_CullTransparentMesh: 1
+--- !u!114 &2083517487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083517483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1313033243
+      Data2: 1089915565
+      Data3: -1859380350
+      Data4: 2034825591
+    Path: event:/ChargeNotification
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &2103698145
 GameObject:
   m_ObjectHideFlags: 0
