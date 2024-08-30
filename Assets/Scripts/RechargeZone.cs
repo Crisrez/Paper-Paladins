@@ -5,8 +5,10 @@ public class RechargeZone : MonoBehaviour {
     public static List<RechargeZone> RechargeZones = new();
     
     [SerializeField] float cooldown;
-    [SerializeField] float time = 0f;
-    
+
+    [SerializeField] List<PersonajeJugable> personajesInZone = new();
+    [SerializeField] PersonajeJugable? newpj, oldpj;
+
     private void OnEnable() {
         RechargeZones.Add(this);
     }
@@ -29,33 +31,38 @@ public class RechargeZone : MonoBehaviour {
 
         return result;
     }
-    private void FixedUpdate()
-    {
-        time += Time.deltaTime;
-    }
-
     private void OnTriggerEnter(Collider collider)
     {
-        time = 0f;
-        collider.gameObject.GetComponent<PersonajeJugable>().SetInZone(true);
-        collider.gameObject.GetComponent<PersonajeJugable>().SetCanShoot(false);
+        if (collider.gameObject.CompareTag("Personaje"))
+        {
+            newpj = collider.gameObject.GetComponentInParent<PersonajeJugable>();
+
+            if (!personajesInZone.Contains(newpj))
+            {
+                personajesInZone.Add(newpj);
+                newpj.SetInZone(true);
+                newpj.SetCanShoot(false);
+            }
+        }
     }
 
     private void OnTriggerStay(Collider collider)
     {
-        if (collider.gameObject.CompareTag("Personaje"))
+        foreach (PersonajeJugable pj in personajesInZone)
         {
-            if (time > cooldown)
+            if (pj.GetTimerInZone() > cooldown)
             {
-                time = 0f;
-                collider.gameObject.GetComponent<PersonajeJugable>().Recargar();
+                pj.Recargar();
             }
         }
     }
 
     private void OnTriggerExit(Collider collider)
     {
-        collider.gameObject.GetComponent<PersonajeJugable>().SetInZone(false);
-        collider.gameObject.GetComponent<PersonajeJugable>().SetCanShoot(true);
+        oldpj = collider.GetComponentInParent<PersonajeJugable>();
+
+        oldpj.SetInZone(false);
+        oldpj.SetCanShoot(true);
+        personajesInZone.Remove(oldpj);
     }
 }

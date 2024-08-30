@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;using UnityEditor;
+using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public static class BomboocherUtility {
     public static T GetClosest<T>(this List<T> collection, Vector3 position) where T : MonoBehaviour{
@@ -24,7 +26,9 @@ public class HealZone : MonoBehaviour {
     public static List<HealZone> HealZones = new();
     
     [SerializeField] float cooldown;
-    [SerializeField] float time = 0f;
+
+    [SerializeField] List<PersonajeJugable> personajesInZone = new();
+    [SerializeField] PersonajeJugable? newpj, oldpj;
 
     public static HealZone GetClosestHealZone(Vector3 position) {
         HealZone result = null;
@@ -49,33 +53,38 @@ public class HealZone : MonoBehaviour {
         HealZones.Remove(this);
     }
 
-    private void FixedUpdate()
-    {
-        time += Time.deltaTime;
-    }
-
     private void OnTriggerEnter(Collider collider)
     {
-        time = 0f;
-        collider.gameObject.GetComponent<PersonajeJugable>().SetInZone(true);
-        collider.gameObject.GetComponent<PersonajeJugable>().SetCanShoot(false);
+        if (collider.gameObject.CompareTag("Personaje"))
+        {
+            newpj = collider.gameObject.GetComponentInParent<PersonajeJugable>();
+
+            if (!personajesInZone.Contains(newpj))
+            {
+                personajesInZone.Add(newpj);
+                newpj.SetInZone(true);
+                newpj.SetCanShoot(false);
+            }
+        }
     }
 
     private void OnTriggerStay(Collider collider)
     {
-        if (collider.gameObject.CompareTag("Personaje"))
+        foreach (PersonajeJugable pj in personajesInZone)
         {
-            if (time > cooldown)
+            if (pj.GetTimerInZone() > cooldown)
             {
-                time = 0f;
-                collider.gameObject.GetComponent<PersonajeJugable>().Curar();
+                pj.Curar();
             }
         }
     }
 
     private void OnTriggerExit(Collider collider)
     {
-        collider.gameObject.GetComponent<PersonajeJugable>().SetInZone(false);
-        collider.gameObject.GetComponent<PersonajeJugable>().SetCanShoot(true);
+        oldpj = collider.GetComponentInParent<PersonajeJugable>();
+
+        oldpj.SetInZone(false);
+        oldpj.SetCanShoot(true);
+        personajesInZone.Remove(oldpj);
     }
 }
