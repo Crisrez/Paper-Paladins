@@ -5,7 +5,7 @@
 			<value>Splash</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{513721d3-afd3-4368-9ff0-9001d93b673b}</destination>
@@ -103,6 +103,7 @@
 	<object class="MixerBusEffectChain" id="{b331ec8a-b155-46ab-ba5c-85aade0e5e0c}">
 		<relationship name="effects">
 			<destination>{81f3bffa-06e0-4396-8593-6f210e2a21dc}</destination>
+			<destination>{159de02a-1daa-4464-adfb-968ec621ae2b}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{6213fa9c-7de1-4b37-9c79-63cabfc0b032}" />
@@ -116,6 +117,7 @@
 	</object>
 	<object class="MixerBusFader" id="{40e276e4-cccf-4f8b-8673-691d5305dfd6}" />
 	<object class="MixerBusFader" id="{81f3bffa-06e0-4396-8593-6f210e2a21dc}" />
+	<object class="SpatialiserEffect" id="{159de02a-1daa-4464-adfb-968ec621ae2b}" />
 	<object class="RandomizerModulator" id="{cdf30a26-8072-47ff-8105-5d9253f5613a}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>pitch</value>
