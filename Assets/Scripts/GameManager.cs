@@ -25,17 +25,17 @@ public class GameManager : MonoBehaviour
 
         UpdateAmmoUI();
 
-        for (int i = 0; i < humedadUI.Count; i++)
-        {
-            if (i < player.GetVida())
-            {
-                humedadUI[i+1].gameObject.SetActive(true);
-            }
-            else
-            {
-                humedadUI[i+1].gameObject.SetActive(false);
-            }
-        }
+        // for (int i = 0; i < humedadUI.Count; i++)
+        // {
+        //     if (i < player.GetVida())
+        //     {
+        //         humedadUI[i+1].gameObject.SetActive(true);
+        //     }
+        //     else
+        //     {
+        //         humedadUI[i+1].gameObject.SetActive(false);
+        //     }
+        // }
     }
     
     private void UpdateAmmoUI() {

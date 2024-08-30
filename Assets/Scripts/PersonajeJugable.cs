@@ -73,7 +73,7 @@ public class PersonajeJugable : MonoBehaviour {
 
     public void RecibirDano(float dmg) {
         if (vida == 0) return;
-        
+
         vida -= dmg;
         if (vida <= 0) {
             Muerte();
@@ -99,14 +99,10 @@ public class PersonajeJugable : MonoBehaviour {
 
 
     public void Muerte() {
-        if (!canRespawn) {
-            //Debug.Log("Mori");
-            //Destroy(this);
-        }
-        else {
-            //Debug.Log("Respawnee");
-            Respawn();
-        }
+        Debug.Log("Death");
+
+        Respawn();
+
     }
 
     public void GenerarBala(GameObject bullet, GameObject weapon) {
@@ -121,6 +117,8 @@ public class PersonajeJugable : MonoBehaviour {
 
         IEnumerator RespawnCoroutine() {
             yield return new WaitForSeconds(5f);
+
+            Debug.Log("Respawn");
             gameObject.transform.position = RespawnPoint.GetRespawnPoint().transform.position;
             vida = vidaMax;
             municion = municionMax;
