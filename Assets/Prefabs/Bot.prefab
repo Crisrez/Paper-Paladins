@@ -94,7 +94,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1198577660614932365}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0.44929934, z: -0, w: 0.8933813}
   m_LocalPosition: {x: 0, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -509,22 +509,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09be484d65212a742888ec1481c05882, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidaMax: 5
-  vida: 5
+  vidaMax: 2
+  vida: 2
   velocidad: 5
   municionMax: 5
   municion: 5
   canShoot: 1
   canRespawn: 0
   inZone: 0
-  pointsRespawn:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  cooldown: 0
-  timer: 5
+  cooldownShoot: 0
+  timerShoot: 5
+  timerInZone: 0
 --- !u!143 &5635971782918498010
 CharacterController:
   m_ObjectHideFlags: 0

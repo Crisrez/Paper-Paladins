@@ -10,8 +10,6 @@ public class EnemyController : MonoBehaviour {
     [SerializeField] GameObject ballPrefab;
     [SerializeField] GameObject spawnBall;
 
-    [SerializeField] GameObject player;
-
     [SerializeField]
     private float engagementDistance = 5;
     [SerializeField]
@@ -28,7 +26,6 @@ public class EnemyController : MonoBehaviour {
         sensor = GetComponentInChildren<EnemySensor>();
         
         agent.speed = me.GetVelocidad();
-        agent.destination = player.transform.position;
     }
 
     public void BotDispara() {
@@ -36,19 +33,22 @@ public class EnemyController : MonoBehaviour {
     }
 
     private void FixedUpdate() {
+        agent.isStopped = me.GetVida() <= 0;
         UpdateTarget(); 
-        
-        
-        agent.destination = agentTarget.position;
     }
 
     private void UpdateTarget() {
+        if (me.GetVida() <= 0) {
+            return;
+        }
+        
         var position = transform.position;
         if (me.GetVida() < 2f) {
             var closestHealZone = HealZone.HealZones.GetClosest(position);
 
             if (closestHealZone != null) {
                 agentTarget = closestHealZone.transform;
+                agent.destination = agentTarget.position;
                 agent.stoppingDistance = 1;
                 targetCharacter = null;
                 return;
@@ -59,6 +59,7 @@ public class EnemyController : MonoBehaviour {
             RechargeZone closestRechargeZone = RechargeZone.RechargeZones.GetClosest(position);
             if (closestRechargeZone) {
                 agentTarget = closestRechargeZone.transform;
+                agent.destination = agentTarget.position;
                 agent.stoppingDistance = 1;
                 targetCharacter = null;
                 return;
@@ -69,6 +70,7 @@ public class EnemyController : MonoBehaviour {
             targetCharacter =  sensor.Targets.GetClosest(position);
             if (targetCharacter != null) {
                 agentTarget = targetCharacter.transform;
+                agent.destination = agentTarget.position;
                 agent.stoppingDistance = engagementDistance;
                 BotDispara();
                 return;

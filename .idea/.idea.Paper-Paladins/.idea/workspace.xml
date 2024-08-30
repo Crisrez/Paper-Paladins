@@ -188,6 +188,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Fix Colision disparo" />
     <MESSAGE value="Updated character AI and physics" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated character AI and physics" />
+    <MESSAGE value="Character Death and Respawn" />
+    <option name="LAST_COMMIT_MESSAGE" value="Character Death and Respawn" />
   </component>
 </project>

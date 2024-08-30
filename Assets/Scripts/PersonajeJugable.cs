@@ -122,6 +122,8 @@ public class PersonajeJugable : MonoBehaviour {
         IEnumerator RespawnCoroutine() {
             yield return new WaitForSeconds(5f);
             gameObject.transform.position = RespawnPoint.GetRespawnPoint().transform.position;
+            vida = vidaMax;
+            municion = municionMax;
         }
     }
 
