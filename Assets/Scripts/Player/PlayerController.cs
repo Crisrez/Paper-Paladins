@@ -28,6 +28,8 @@ public class PlayerController : MonoBehaviour
 
         move = cameraTransform.forward * move.z + cameraTransform.right * move.x;
         move.y = 0f;
+        
+        if (gameObject.GetComponent<PersonajeJugable>().GetIsDead()) { return; }
 
         controller.SimpleMove(move * playerSpeed);
 

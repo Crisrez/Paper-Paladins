@@ -56,5 +56,10 @@ public class InputController: MonoBehaviour
         return playerActions.Gameplay.Attack.triggered;
     }
 
+    public bool Pausar()
+    {
+        return playerActions.Gameplay.Pause.triggered;
+    }
+
 
 } 
