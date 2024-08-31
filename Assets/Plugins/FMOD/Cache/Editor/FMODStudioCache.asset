@@ -1,5 +1,29 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6689527653159506591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  StudioPath: parameter:/Health
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 3179278646
+    data2: 4167791853
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &-5671600465881796128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52,9 +76,34 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters:
   - {fileID: 1162992396044038760}
+  - {fileID: -3394194541446295801}
   MinDistance: 1
   MaxDistance: 20
   Length: 211597
+--- !u!114 &-3394194541446295801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 3179278646
+    data2: 4167791853
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &-2988261525742833305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97,10 +146,10 @@ MonoBehaviour:
   Path: Assets/Bomboocher/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638606286029138530
+  lastModified: 638606582628968603
   FileSizes:
   - Name: Desktop
-    Value: 1174
+    Value: 1224
   Exists: 1
 --- !u!114 &-848721019429232864
 MonoBehaviour:
@@ -181,11 +230,12 @@ MonoBehaviour:
   - {fileID: 7142886566801178269}
   EditorParameters:
   - {fileID: 7973585874002729043}
+  - {fileID: -6689527653159506591}
   MasterBanks:
   - {fileID: 8113304051633256248}
   StringsBanks:
   - {fileID: -1958517565979023761}
-  cacheTime: 638606286029138530
+  cacheTime: 638606582628968603
   cacheVersion: 131618
 --- !u!114 &166082058817290361
 MonoBehaviour:
@@ -304,8 +354,8 @@ MonoBehaviour:
   Path: Assets/Bomboocher/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638606286029128503
+  lastModified: 638606582628948475
   FileSizes:
   - Name: Desktop
-    Value: 4911424
+    Value: 4912256
   Exists: 1

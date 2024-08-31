@@ -611,6 +611,8 @@ GameObject:
   - component: {fileID: 103755472}
   - component: {fileID: 103755475}
   - component: {fileID: 103755474}
+  - component: {fileID: 103755476}
+  - component: {fileID: 103755477}
   m_Layer: 5
   m_Name: 40%
   m_TagString: Untagged
@@ -707,6 +709,38 @@ MonoBehaviour:
   Parameter: Location
   TriggerEvent: 12
   Value: 2
+--- !u!114 &103755476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103755470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Health
+  TriggerEvent: 12
+  Value: 0.2
+--- !u!114 &103755477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103755470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Health
+  TriggerEvent: 11
+  Value: 0.4
 --- !u!1 &113600693
 GameObject:
   m_ObjectHideFlags: 0
@@ -1218,6 +1252,8 @@ GameObject:
   - component: {fileID: 319796332}
   - component: {fileID: 319796334}
   - component: {fileID: 319796333}
+  - component: {fileID: 319796335}
+  - component: {fileID: 319796336}
   m_Layer: 5
   m_Name: 80%
   m_TagString: Untagged
@@ -1282,6 +1318,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 319796331}
   m_CullTransparentMesh: 1
+--- !u!114 &319796335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319796331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Health
+  TriggerEvent: 12
+  Value: 0.6
+--- !u!114 &319796336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319796331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Health
+  TriggerEvent: 11
+  Value: 0.8
 --- !u!1 &321334208
 GameObject:
   m_ObjectHideFlags: 0
@@ -2971,6 +3039,8 @@ GameObject:
   - component: {fileID: 1291246795}
   - component: {fileID: 1291246797}
   - component: {fileID: 1291246796}
+  - component: {fileID: 1291246798}
+  - component: {fileID: 1291246799}
   m_Layer: 5
   m_Name: 60%
   m_TagString: Untagged
@@ -3035,6 +3105,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1291246794}
   m_CullTransparentMesh: 1
+--- !u!114 &1291246798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291246794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Health
+  TriggerEvent: 12
+  Value: 0.4
+--- !u!114 &1291246799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291246794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Health
+  TriggerEvent: 11
+  Value: 0.6
 --- !u!1001 &1569800557
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3891,6 +3993,8 @@ GameObject:
   - component: {fileID: 1757436116}
   - component: {fileID: 1757436118}
   - component: {fileID: 1757436117}
+  - component: {fileID: 1757436119}
+  - component: {fileID: 1757436120}
   m_Layer: 5
   m_Name: 20%
   m_TagString: Untagged
@@ -3955,6 +4059,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1757436115}
   m_CullTransparentMesh: 1
+--- !u!114 &1757436119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757436115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Health
+  TriggerEvent: 12
+  Value: 0
+--- !u!114 &1757436120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757436115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Health
+  TriggerEvent: 11
+  Value: 0.2
 --- !u!1 &1762185541
 GameObject:
   m_ObjectHideFlags: 0
@@ -4636,6 +4772,8 @@ GameObject:
   - component: {fileID: 2044944410}
   - component: {fileID: 2044944412}
   - component: {fileID: 2044944411}
+  - component: {fileID: 2044944413}
+  - component: {fileID: 2044944414}
   m_Layer: 5
   m_Name: 100%
   m_TagString: Untagged
@@ -4700,6 +4838,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2044944409}
   m_CullTransparentMesh: 1
+--- !u!114 &2044944413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044944409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Health
+  TriggerEvent: 12
+  Value: 0.8
+--- !u!114 &2044944414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044944409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Health
+  TriggerEvent: 11
+  Value: 1
 --- !u!1 &2056722760
 GameObject:
   m_ObjectHideFlags: 0
