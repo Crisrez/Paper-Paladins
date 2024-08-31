@@ -24,9 +24,9 @@ public class CharacterSprite : MonoBehaviour {
     private static readonly int IsDead = Animator.StringToHash("IsDead");
 
     private MaterialPropertyBlock propertyBlock;
-    private static readonly int ColorA = Shader.PropertyToID("ColorA");
-    private static readonly int ColorB = Shader.PropertyToID("ColorB");
-    private static readonly int LineColor = Shader.PropertyToID("LineColor");
+    private static readonly int ColorA = Shader.PropertyToID("_ColorA");
+    private static readonly int ColorB = Shader.PropertyToID("_ColorB");
+    private static readonly int LineColor = Shader.PropertyToID("_LineColor");
     private void Awake() {
         parent = transform.parent;
         renderer = GetComponent<SpriteRenderer>();
@@ -39,9 +39,7 @@ public class CharacterSprite : MonoBehaviour {
 
     public void RandomizeColorScheme() {
         var scheme = colorSchemes[Random.Range(0, colorSchemes.Length)];
-        if (propertyBlock == null) {
-            propertyBlock = new();
-        }
+        propertyBlock ??= new();
         propertyBlock.SetColor(ColorA,scheme.primary);
         propertyBlock.SetColor(ColorB,scheme.secondary);
         propertyBlock.SetColor(LineColor,scheme.line);
@@ -50,7 +48,7 @@ public class CharacterSprite : MonoBehaviour {
     }
     
     private void Start() {
-        RandomizeColorScheme();
+        if(Application.isPlaying) RandomizeColorScheme();
         if (Camera.main != null) camera = Camera.main.transform;
     }
 
