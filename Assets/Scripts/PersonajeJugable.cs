@@ -15,6 +15,7 @@ public class PersonajeJugable : MonoBehaviour {
     [SerializeField] private bool canShoot = true;
     [SerializeField] private bool canRespawn;
     [SerializeField] private bool inZone = false;
+    [SerializeField] private bool isDead = false;
 
     [SerializeField] private float cooldownShoot;
     [SerializeField] private float timerShoot = 5f;
@@ -31,6 +32,8 @@ public class PersonajeJugable : MonoBehaviour {
     public float GetVidaMax() { return vidaMax; }
 
     public float GetTimerInZone() { return timerInZone; }
+
+    public bool GetIsDead() { return isDead; }
 
     public void SetCanShoot(bool _canShoot) {
         canShoot = _canShoot;
@@ -100,7 +103,7 @@ public class PersonajeJugable : MonoBehaviour {
 
     public void Muerte() {
         Debug.Log("Death");
-
+        isDead = true;
         Respawn();
 
     }
@@ -119,6 +122,7 @@ public class PersonajeJugable : MonoBehaviour {
             yield return new WaitForSeconds(5f);
 
             Debug.Log("Respawn");
+            isDead = false;
             gameObject.transform.position = RespawnPoint.GetRespawnPoint().transform.position;
             vida = vidaMax;
             municion = municionMax;
