@@ -134,6 +134,8 @@ GameObject:
   - component: {fileID: 25950598}
   - component: {fileID: 25950597}
   - component: {fileID: 25950596}
+  - component: {fileID: 25950601}
+  - component: {fileID: 25950600}
   m_Layer: 5
   m_Name: Pause
   m_TagString: Untagged
@@ -224,6 +226,38 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &25950600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25950595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Location
+  TriggerEvent: 12
+  Value: 1
+--- !u!114 &25950601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25950595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Location
+  TriggerEvent: 11
+  Value: 0
 --- !u!1 &37213942
 GameObject:
   m_ObjectHideFlags: 0
@@ -609,8 +643,6 @@ GameObject:
   - component: {fileID: 103755471}
   - component: {fileID: 103755473}
   - component: {fileID: 103755472}
-  - component: {fileID: 103755475}
-  - component: {fileID: 103755474}
   - component: {fileID: 103755476}
   - component: {fileID: 103755477}
   m_Layer: 5
@@ -677,38 +709,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 103755470}
   m_CullTransparentMesh: 1
---- !u!114 &103755474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 103755470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Parameter: Location
-  TriggerEvent: 11
-  Value: 1
---- !u!114 &103755475
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 103755470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Parameter: Location
-  TriggerEvent: 12
-  Value: 2
 --- !u!114 &103755476
 MonoBehaviour:
   m_ObjectHideFlags: 0
