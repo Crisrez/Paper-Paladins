@@ -1,5 +1,7 @@
+using System;
 using UnityEngine;
 using Cinemachine;
+using UnityEngine.InputSystem;
 
 public class CinemachinePOVExtension : CinemachineExtension
 {
@@ -14,6 +16,18 @@ public class CinemachinePOVExtension : CinemachineExtension
     {
         inputController = InputController.Instance;
         base.Awake();
+    }
+
+    private void Start() {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    private void Update() {
+        if (Mouse.current.leftButton.wasPressedThisFrame) {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
     }
 
     protected override void PostPipelineStageCallback(CinemachineVirtualCameraBase vcam, CinemachineCore.Stage stage, ref CameraState state , float deltaTime)

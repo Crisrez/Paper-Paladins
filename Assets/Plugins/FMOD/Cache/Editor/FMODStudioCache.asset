@@ -146,7 +146,7 @@ MonoBehaviour:
   Path: Assets/Bomboocher/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638606656532986328
+  lastModified: 638606752408884568
   FileSizes:
   - Name: Desktop
     Value: 1224
@@ -235,7 +235,7 @@ MonoBehaviour:
   - {fileID: 8113304051633256248}
   StringsBanks:
   - {fileID: -1958517565979023761}
-  cacheTime: 638606656532986328
+  cacheTime: 638606752408884568
   cacheVersion: 131618
 --- !u!114 &166082058817290361
 MonoBehaviour:
@@ -354,7 +354,7 @@ MonoBehaviour:
   Path: Assets/Bomboocher/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638606656532890116
+  lastModified: 638606752408839544
   FileSizes:
   - Name: Desktop
     Value: 4912256
