@@ -6599,58 +6599,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2116601985136487513, guid: a21c620a513f6c54c9f197d7e0f3c4ef, type: 3}
-      propertyPath: colorSchemes.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2116601985136487513, guid: a21c620a513f6c54c9f197d7e0f3c4ef, type: 3}
-      propertyPath: colorSchemes.Array.data[0].line.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2116601985136487513, guid: a21c620a513f6c54c9f197d7e0f3c4ef, type: 3}
-      propertyPath: colorSchemes.Array.data[0].line.b
-      value: 0.33333334
-      objectReference: {fileID: 0}
-    - target: {fileID: 2116601985136487513, guid: a21c620a513f6c54c9f197d7e0f3c4ef, type: 3}
-      propertyPath: colorSchemes.Array.data[0].line.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2116601985136487513, guid: a21c620a513f6c54c9f197d7e0f3c4ef, type: 3}
-      propertyPath: colorSchemes.Array.data[0].line.r
-      value: 0.032201767
-      objectReference: {fileID: 0}
-    - target: {fileID: 2116601985136487513, guid: a21c620a513f6c54c9f197d7e0f3c4ef, type: 3}
-      propertyPath: colorSchemes.Array.data[0].primary.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2116601985136487513, guid: a21c620a513f6c54c9f197d7e0f3c4ef, type: 3}
-      propertyPath: colorSchemes.Array.data[0].primary.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2116601985136487513, guid: a21c620a513f6c54c9f197d7e0f3c4ef, type: 3}
-      propertyPath: colorSchemes.Array.data[0].primary.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2116601985136487513, guid: a21c620a513f6c54c9f197d7e0f3c4ef, type: 3}
-      propertyPath: colorSchemes.Array.data[0].primary.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2116601985136487513, guid: a21c620a513f6c54c9f197d7e0f3c4ef, type: 3}
-      propertyPath: colorSchemes.Array.data[0].secondary.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2116601985136487513, guid: a21c620a513f6c54c9f197d7e0f3c4ef, type: 3}
-      propertyPath: colorSchemes.Array.data[0].secondary.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2116601985136487513, guid: a21c620a513f6c54c9f197d7e0f3c4ef, type: 3}
-      propertyPath: colorSchemes.Array.data[0].secondary.g
-      value: 0.56395924
-      objectReference: {fileID: 0}
-    - target: {fileID: 2116601985136487513, guid: a21c620a513f6c54c9f197d7e0f3c4ef, type: 3}
-      propertyPath: colorSchemes.Array.data[0].secondary.r
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3749149502653544713, guid: a21c620a513f6c54c9f197d7e0f3c4ef, type: 3}
       propertyPath: m_FlipX
       value: 0

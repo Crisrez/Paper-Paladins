@@ -165,6 +165,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c2829ced88847147a261868351ced75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  colorSchemes:
+  - primary: {r: 0.42745098, g: 0.9137255, b: 0.8980392, a: 1}
+    secondary: {r: 0.44313726, g: 0.8666667, b: 0.38039216, a: 1}
+    line: {r: 0, g: 0.22745098, b: 0.11372549, a: 1}
+  - primary: {r: 0.9137255, g: 0.8, b: 0.42745098, a: 1}
+    secondary: {r: 0.8666667, g: 0.38039216, b: 0.6431373, a: 1}
+    line: {r: 0.22745098, g: 0, b: 0.011764706, a: 1}
+  - primary: {r: 0.7882353, g: 0.42745098, b: 0.9137255, a: 1}
+    secondary: {r: 0.38039216, g: 0.43137255, b: 0.8666667, a: 1}
+    line: {r: 0.039215688, g: 0.19215687, b: 0.21568628, a: 1}
+  - primary: {r: 1, g: 0.28627452, b: 0.09803922, a: 1}
+    secondary: {r: 0.5372549, g: 0.42745098, b: 1, a: 1}
+    line: {r: 0.13333334, g: 0.015686275, b: 0.07058824, a: 1}
 --- !u!95 &522480654774304755
 Animator:
   serializedVersion: 5
@@ -494,7 +507,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ballPrefab: {fileID: 6763477341526841654, guid: 2818a311dc03fe5428733691a291bcd5, type: 3}
   spawnBall: {fileID: 8441014835195315683}
-  player: {fileID: 0}
   engagementDistance: 5
   attackCooldown: 0.8
 --- !u!114 &6475515814993699237
@@ -517,6 +529,7 @@ MonoBehaviour:
   canShoot: 1
   canRespawn: 0
   inZone: 0
+  isDead: 0
   cooldownShoot: 0
   timerShoot: 5
   timerInZone: 0
