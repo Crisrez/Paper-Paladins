@@ -1,27 +1,56 @@
-using System;
 using UnityEngine;
 using UnityEngine.AI;
 
 [ExecuteAlways]
 public class CharacterSprite : MonoBehaviour {
+    [System.Serializable]
+    public class CharacterColorScheme {
+        public Color primary;
+        public Color secondary;
+        public Color line;
+    }
     private Animator animator;
     private Transform camera;
     private Transform parent;
     private Rigidbody parentRigidbody;
     private PersonajeJugable character;
     private NavMeshAgent agent;
+    private SpriteRenderer renderer;
+    private Material rendererMaterial;
+    [SerializeField] private CharacterColorScheme[] colorSchemes;
+    
     private static readonly int ViewAngle = Animator.StringToHash("ViewAngle");
     private static readonly int IsRunning = Animator.StringToHash("IsRunning");
     private static readonly int IsDead = Animator.StringToHash("IsDead");
+
+    private MaterialPropertyBlock propertyBlock;
+    private static readonly int ColorA = Shader.PropertyToID("ColorA");
+    private static readonly int ColorB = Shader.PropertyToID("ColorB");
+    private static readonly int LineColor = Shader.PropertyToID("LineColor");
     private void Awake() {
         parent = transform.parent;
+        renderer = GetComponent<SpriteRenderer>();
+        
         character = GetComponentInParent<PersonajeJugable>();
         parentRigidbody = parent.GetComponent<Rigidbody>();
         agent = parent.GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
     }
 
+    public void RandomizeColorScheme() {
+        var scheme = colorSchemes[Random.Range(0, colorSchemes.Length)];
+        if (propertyBlock == null) {
+            propertyBlock = new();
+        }
+        propertyBlock.SetColor(ColorA,scheme.primary);
+        propertyBlock.SetColor(ColorB,scheme.secondary);
+        propertyBlock.SetColor(LineColor,scheme.line);
+        
+        renderer.SetPropertyBlock(propertyBlock);
+    }
+    
     private void Start() {
+        RandomizeColorScheme();
         if (Camera.main != null) camera = Camera.main.transform;
     }
 

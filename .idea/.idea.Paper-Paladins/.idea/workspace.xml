@@ -101,8 +101,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/520726165fdf464cb96f4a4ea2a2ec4fd400/bf/0bdbb796/NavMeshAgent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/779cc116a5954f1c9b92496e62345641175c00/e7/1a24c483/Renderer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e46e9bb88b78469fbd4d3d1c372264d61fe00/76/f2c23a1d/CharacterController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/RespawnPoint.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -138,6 +138,14 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Builds/Bomboocher_Win/Boombucher-prototype.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="D:\git\Paper-Paladins\Builds\Bomboocher_Win" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="W:\Unity Installs\2022.3.32f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath D:\git\Paper-Paladins -debugCodeOptimization" />
@@ -189,6 +197,8 @@
     <MESSAGE value="Fix Colision disparo" />
     <MESSAGE value="Updated character AI and physics" />
     <MESSAGE value="Character Death and Respawn" />
-    <option name="LAST_COMMIT_MESSAGE" value="Character Death and Respawn" />
+    <MESSAGE value="Added arena scene model" />
+    <MESSAGE value="Removed unnecessary using statements in GameManager" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed unnecessary using statements in GameManager" />
   </component>
 </project>

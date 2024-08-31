@@ -28,6 +28,11 @@ public class CinemachinePOVExtension : CinemachineExtension
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
         }
+
+        if (Keyboard.current.escapeKey.wasPressedThisFrame) {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
     }
 
     protected override void PostPipelineStageCallback(CinemachineVirtualCameraBase vcam, CinemachineCore.Stage stage, ref CameraState state , float deltaTime)
